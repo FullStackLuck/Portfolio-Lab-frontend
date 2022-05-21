@@ -13,8 +13,7 @@ function Projects (props){
         setProjects(data)
     };
 
-    useEffect(()=> {getProjectsData()}, []),
-    console.log(projects)
+    useEffect(()=> {getProjectsData()}, [])
 
     const loaded =() =>{ 
 
