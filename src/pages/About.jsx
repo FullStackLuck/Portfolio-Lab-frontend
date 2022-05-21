@@ -24,7 +24,7 @@ function About (props){
         </div>
 
 
-    )
+    ) 
 
     return about ? loaded() : <h1>Loading..</h1>
 }

@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import { Route, Routes } from 'react-router';
 
 
-//Imported Pages
+//Imported Pages 
 
 import Home from './pages/Home';
 import About  from './pages/About';

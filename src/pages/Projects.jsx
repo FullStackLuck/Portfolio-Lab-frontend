@@ -16,7 +16,7 @@ function Projects (props){
     useEffect(()=> {getProjectsData()}, []),
     console.log(projects)
 
-    const loaded =() =>{
+    const loaded =() =>{ 
 
         return projects.map((projects) =>(
             <div>
