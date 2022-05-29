@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import '../App.css'
 
 
 function About (props){
@@ -17,13 +18,21 @@ function About (props){
     useEffect(()=> {getAboutData()},[]);
 
     const loaded = ()=>(
-        <div>
+        <>
+        <div className='about'>
+            <ol>
             <h3>{about.name}</h3>
-            <h2>{about.email}</h2>
-            <p>{about.bio}</p>
+            <p className='bio'>{about.bio}</p>
+            <img className='pic' src ={about.headshot}/>
+            </ol>
         </div>
-
-
+        <h1>Contacts</h1>
+        <div className='name'>
+            <h2>{about.email}</h2>
+            <h1>Technologies</h1>
+            <h2>{about.tech}</h2>
+        </div>
+        </>
     ) 
 
     return about ? loaded() : <h1>Loading..</h1>

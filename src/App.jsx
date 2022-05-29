@@ -1,4 +1,5 @@
 // Import components
+import "./App.css"
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Route, Routes } from 'react-router';
@@ -22,8 +23,6 @@ function App() {
         <Route path= "/about" element = {<About URL={URL}/>}/>
         <Route path= "/projects" element = {<Projects URL={URL}/>}/>
       </Routes>
-      <Footer/>
-    
     </div>
   );
 }

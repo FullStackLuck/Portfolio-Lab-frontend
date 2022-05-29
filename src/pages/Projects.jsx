@@ -1,4 +1,6 @@
 import {useState, useEffect} from "react"
+import "./projects.sass"
+
 
 
 function Projects (props){
@@ -22,13 +24,12 @@ function Projects (props){
                 <h1>{projects.name}</h1>
 
                 <a href={projects.git}>
-                 <button>Github</button>
+                 <button className="github">Github</button>
                 </a>
 
                 <a href={projects.live}>
-                    <button>Live Site</button>
+                    <button className="github">Live Site</button>
                 </a>
-
             </div>
 
         ));
